@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Adarsh Music Player</h1>
+            <div class="user-photo">
+                <img src="https://res.cloudinary.com/dlmwoabwe/image/upload/v1710003825/padz2tdw1gsqf4xbajjo.jpg" alt="adarsh Photo">
+            </div>
+        </div>
+        <div class="music-player">
+            <audio id="audio" controls></audio>
+            <div class="controls">
+                <button id="prevBtn" class="control-btn">Previous</button>
+                <button id="playPauseBtn" class="control-btn">Play</button>
+                <button id="nextBtn" class="control-btn">Next</button>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div id="songInfo" class="song-info"></div>
+            <input type="range" id="volumeSlider" class="volume-slider" min="0" max="1" step="0.01" value="1">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
